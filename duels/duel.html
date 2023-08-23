@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="/duels/duel.css" />
   </head>
   <body>
-    <script src="/duels/duel.js"></script>
-
     <div>
       <div class="headerDuel">Random duel picker</div>
     </div>
@@ -57,21 +55,16 @@
       <div class="groupA">
         <div class="group" id="groupA">
           <h3>Group A</h3>
-          <ul class="player-list">
-            <!-- Players will be added here dynamically -->
-          </ul>
+          <ul class="player-list"></ul>
         </div>
       </div>
       <div class="groupB">
         <div class="group" id="groupB">
           <h3>Group B</h3>
-          <ul class="player-list">
-            <!-- Players will be added here dynamically -->
-          </ul>
+          <ul class="player-list"></ul>
         </div>
       </div>
     </div>
-
     <div class="counter" id="counterSection">
       <label class="amount-of-players-text" for="playerCount"
         >Players per team:</label
@@ -79,7 +72,6 @@
       <input class="chose-players" id="playerCount" />
       <button class="apply-button" onclick="showInputField()">Apply</button>
     </div>
-
     <div class="input-container" id="inputSection" style="display: none">
       <label for="playerName" class="name">Enter Player Name:</label>
       <input
@@ -89,5 +81,6 @@
         class="input-player-name"
       />
     </div>
+    <script src="/duels/duel.js"></script>
   </body>
 </html>

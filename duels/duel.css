@@ -1,6 +1,7 @@
 html {
   background-image: url(/bracket-background.jpg);
-  transform: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 * {
