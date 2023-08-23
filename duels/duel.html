@@ -1,0 +1,93 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duel</title>
+    <link rel="stylesheet" href="/duels/duel.css" />
+  </head>
+  <body>
+    <script src="/duels/duel.js"></script>
+
+    <div>
+      <div class="headerDuel">Random duel picker</div>
+    </div>
+    <div class="bracket">
+      <div class="round">
+        <div class="match1">
+          <div class="team"></div>
+          <div class="team"><div class="line"></div></div>
+        </div>
+        <div class="match2">
+          <div class="team"></div>
+          <div class="team"><div class="line"></div></div>
+        </div>
+      </div>
+      <div class="round">
+        <div class="match3">
+          <div class="team"></div>
+          <div class="team"><div class="line"></div></div>
+        </div>
+      </div>
+      <div class="round">
+        <div class="final">
+          <div class="team"></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu" id="menu">
+      <div class="title"><h1>NAVIGATION</h1></div>
+      <div class="listMenu">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li>
+            <a href="/duels/duel.html">Duel</a>
+          </li>
+          <li><a href="/skins/skins.html">Skins</a></li>
+          <li><a href="/team/team.html">Team</a></li>
+        </ul>
+        <div class="footerMenu">
+          <img src="/lg.png" alt="image" class="logo" />
+          <p class="footerText">Stray 2023</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="group-system-title">Group System</h2>
+    <div class="group-system">
+      <div class="groupA">
+        <div class="group" id="groupA">
+          <h3>Group A</h3>
+          <ul class="player-list">
+            <!-- Players will be added here dynamically -->
+          </ul>
+        </div>
+      </div>
+      <div class="groupB">
+        <div class="group" id="groupB">
+          <h3>Group B</h3>
+          <ul class="player-list">
+            <!-- Players will be added here dynamically -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="counter" id="counterSection">
+      <label class="amount-of-players-text" for="playerCount"
+        >Players per team:</label
+      >
+      <input class="chose-players" id="playerCount" />
+      <button class="apply-button" onclick="showInputField()">Apply</button>
+    </div>
+
+    <div class="input-container" id="inputSection" style="display: none">
+      <label for="playerName" class="name">Enter Player Name:</label>
+      <input
+        placeholder="Player name..."
+        type="text"
+        id="playerName"
+        class="input-player-name"
+      />
+    </div>
+  </body>
+</html>
