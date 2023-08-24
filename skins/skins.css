@@ -1,5 +1,4 @@
-/* #30543e */
-
+/* Общие стили */
 html {
   background-image: url(/blured\ map.jpeg);
 }
@@ -10,6 +9,14 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  color: #fff;
+  margin: 2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Стили для заголовка */
 .headerSkins {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -22,8 +29,10 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px #dbeae3;
+  background-color: #30543e;
 }
 
+/* Стили для меню */
 .menu {
   padding: 25vh 50px;
   position: fixed;
@@ -45,6 +54,7 @@ html {
   color: #fcfffc;
   font-size: 25px;
   text-align: center;
+  background-color: #30543e;
 }
 
 .listMenu a {
@@ -79,23 +89,14 @@ html {
   width: 100px;
 }
 
-body {
-  color: #fff;
-  margin: 2em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.mainDiv {
-  border: 1px solid;
-  border-radius: 2px;
-}
-
+/* Стили для контейнера кнопок */
 .buttons {
   display: flex;
-  align-items: stretch;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
+/* Стили для заголовков столбцов */
 .column-title {
   background-color: #30543e;
   width: 100%;
@@ -103,8 +104,10 @@ body {
   text-align: center;
   border-bottom: 2px solid #54936c;
   margin-top: 10px;
+  color: #fcfffc; /* Цвет текста */
 }
 
+/* Стили для столбцов */
 .sideArm,
 .smgs,
 .shotguns,
@@ -119,6 +122,7 @@ body {
   flex-grow: 1;
 }
 
+/* Стили для кнопок */
 .sidearm-buttons button,
 .smgs-buttons button,
 .rifles-buttons button,
@@ -144,28 +148,17 @@ body {
   text-align: center;
   width: 250px;
   height: 150px;
+  position: relative;
 }
 
-.smgs-buttons button {
-  height: 150px;
-}
-
-.rifles-buttons button {
-  height: 189px;
-}
-
-.shotguns-buttons button {
-  height: 170px;
-}
-
-.smgs-buttons button {
-  height: 180px;
-}
-
-.sniper-buttons button {
-  height: 180px;
-}
-
-.heavy-buttons button {
-  height: 170px;
+/* Дополнительные стили для изображений на кнопках */
+.sidearm-buttons img,
+.smgs-buttons img,
+.rifles-buttons img,
+.sniper-buttons img,
+.heavy-buttons img,
+.shotguns-buttons img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }
