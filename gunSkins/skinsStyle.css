@@ -8,9 +8,9 @@ html {
 
 body {
   margin: 0;
-  justify-content: center;
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
   align-items: center;
-  height: 100vh;
   font-family: Arial, sans-serif;
   color: #fcfffc;
 }
@@ -18,22 +18,21 @@ body {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Центрирование по горизонтали */
   gap: 20px;
   max-width: 1200px;
   padding: 30px;
   background: rgba(20, 20, 20, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  margin-top: 50px;
-  margin-top: 30px; /* Добавлен отступ сверху */
-  margin-left: 100px;
+  margin-top: 30px;
 }
 
 .slotForSkin {
-  width: calc(33.33% - 20px); /* Максимум 3 блока в одной линии */
+  flex-basis: calc(33.33% - 20px); /* Максимум 3 блока в одной линии */
   max-height: 500px;
   height: 500px;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px;
   border: 2px solid white;
   border-radius: 2px;
   text-align: center;
