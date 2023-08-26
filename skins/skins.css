@@ -171,20 +171,30 @@ body {
 .rifles-buttons button img,
 .sniper-buttons button img,
 .heavy-buttons button img {
-  height: 40%;
-  width: 90%;
+  max-width: 85%;
+  max-height: 85%;
   padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .sidearm-buttons button img {
-  height: 60%;
-  width: 80%;
+  max-width: 85%;
+  max-height: 85%;
   padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .shotguns-buttons button img {
-  height: 30%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   padding: 5px;
 }
 
