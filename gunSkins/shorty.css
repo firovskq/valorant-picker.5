@@ -1,0 +1,213 @@
+html {
+  background-image: url(/blured\ ascent.jpeg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #fcfffc;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Центрирование по горизонтали */
+  gap: 20px;
+  max-width: 1200px;
+  padding: 30px;
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+}
+
+.slotForSkin {
+  flex-basis: calc(33.33% - 20px); /* Максимум 3 блока в одной линии */
+  max-height: 500px;
+  height: 500px;
+  margin: 20px 0px;
+  border: 2px solid white;
+  border-radius: 2px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skin-box {
+  flex-grow: 1; /* Занимать доступное пространство внутри flex-контейнера */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skin-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.skin-name {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Выравнивание контейнера по вертикали */
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 400px;
+  background-color: rgba(218, 218, 218, 0.1);
+  padding: 10px 0px 10px 0px;
+}
+
+.premiumLogo {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.premiumTextColor .textColor {
+  color: rgba(200, 64, 125, 0.909); /* Изменяем цвет на розовый */
+}
+
+.deluxLogo {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.deluxTextColor .textColor {
+  color: #16bfa8;
+}
+
+.defaultLogo {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.defaultTextColor .textColor {
+  color: #5aa3e7;
+}
+
+.goldLogo {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.goldTextColor .textColor {
+  color: #f6945b;
+}
+
+.priceTitle {
+  font-weight: bold;
+  font-size: 20px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 400px;
+  background-color: rgba(218, 218, 218, 0.1);
+  padding: 10px 0px 10px 0px;
+  justify-content: center;
+  display: flex;
+}
+
+.price {
+  display: flex;
+  align-items: center; /* Выравнивание контейнера по вертикали */
+  padding: 10px 0px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.valorantPoints {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px; /* Добавлен отступ справа */
+}
+
+.menu {
+  position: fixed;
+  left: -410px;
+  top: 0;
+  padding: 25vh 50px;
+  background: rgba(20, 20, 20, 0.5);
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  border-right: 7px solid #fcfffc;
+  transition: left 0.5s ease;
+}
+
+.menu:hover {
+  left: 0;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.listMenu a {
+  font-size: 25px;
+  color: #fcfffc;
+  border-left: 2px solid #f4b7c7;
+  padding-left: 5px;
+  transition: all 0.2s ease;
+}
+
+.listMenu a:hover {
+  border-left: 2px solid #f4b7c7;
+  padding-left: 10px;
+  transition: all 0.2s ease;
+}
+
+.listMenu li {
+  margin: 20px 0;
+}
+
+.footerMenu {
+  color: #fcfffc;
+  font-size: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu {
+  padding: 25vh 50px;
+  position: fixed;
+  background: rgba(20, 20, 20, 0.5);
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  border-right: 7px solid #fcfffc;
+  left: -410px;
+  top: 0px;
+}
+
+.menu:hover {
+  left: 0px;
+  transition: all 0.5s ease;
+}
